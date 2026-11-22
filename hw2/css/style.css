@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 115%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e6f2ff;
+  padding: 15px;
+}
+
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #cce6ff;
+  padding: 10px;
+}
+
+/* Bộ chọn hậu duệ: chỉ tạo kiểu cho ảnh nằm trong nav */
+nav img {
+  width: 10%;
+}
+
+/* Nhận xét (comment) kiểu dáng cũ của li theo yêu cầu đề bài */
+/*
+li {
+  display: inline-block;
+  width: 25%;
+}
+*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+main {
+  background-color: #ffffff;
+  font-size: 105%;
+  padding: 20px;
+}
+
+footer {
+  background-color: #e6f2ff;
+  color: #003366;
+  padding: 15px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #003366;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Lớp grid: 2 cột mỗi cột 40%, căn đều */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 20px;
+}
+
+/* Bộ chọn hậu duệ: chỉ áp dụng width 100% cho ảnh trong lớp grid */
+.grid img {
+  width: 100%;
+}
+
+/* Lớp flex: dùng flexbox, tự xuống dòng và căn đều */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 15px;
+}
