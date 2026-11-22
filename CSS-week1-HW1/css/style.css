@@ -1,4 +1,54 @@
-body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 150%;
+/* Bước 3: body - họ phông chữ và kích thước phông chữ */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 115%;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
 }
+
+/* Bước 4: header - màu nền */
+header {
+  background-color: #e3f2fd;
+  padding: 20px;
+}
+
+/* Bước 5: nav - màu nền */
+nav {
+  background-color: #d0e8f2;
+  padding: 12px 0;
+}
+
+/* Bước 6: main - màu nền và kích thước phông chữ */
+main {
+  background-color: #f8f9fa;
+  font-size: 18px;
+  padding: 20px 30px;
+}
+
+/* Bước 7: footer - màu nền */
+footer {
+  background-color: #e0e7ef;
+  padding: 15px 30px;
+  font-size: 15px;
+}
+
+/* Bước 8: li - hiển thị và chiều rộng */
+li {
+  display: inline-block;
+  width: 30%;
+}
+
+/* Bước 9: h1 - căn chỉnh, họ phông chữ và màu sắc */
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #0b3d91;
+}
+
+/* Bước 10: p - chiều cao dòng */
+p {
+  line-height: 1.6;
+}
+
+/* B
