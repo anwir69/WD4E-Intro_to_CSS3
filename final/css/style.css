@@ -1,0 +1,197 @@
+/* Thiết lập chung - Tông tối Gaming, tương phản cao chuẩn WAVE */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* 1. Skip to Main Content: dùng position và :focus */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 16px;
+  background-color: #facc15;
+  color: #0f172a;
+  padding: 10px 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* Header & Footer */
+header {
+  background-color: #1e293b;
+  border-bottom: 3px solid #38bdf8;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 15px 0 5px 0;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #1e293b;
+  border-top: 2px solid #334155;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 16px;
+  margin-top: 50px;
+}
+
+/* 2. Thanh điều hướng dùng Flex + nhiều thuộc tính CSS */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #1d4ed8;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+/* 3. Hiệu ứng :hover cho thanh điều hướng */
+nav a:hover,
+nav a.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: #f8fafc;
+  transform: translateY(-3px);
+}
+
+main {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #e2e8f0;
+}
+
+/* 4. Mô hình hộp (Box Model) cho TẤT CẢ hình ảnh: border, padding, border-radius */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 3px solid #38bdf8;
+  padding: 6px;
+  border-radius: 12px;
+  background-color: #1e293b;
+  box-sizing: border-box;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+/* Hiệu ứng :hover thú vị cho hình ảnh */
+img:hover {
+  transform: scale(1.04) rotate(0.5deg);
+  border-color: #facc15;
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
+}
+
+/* 5. Bố cục Flex cho trang chủ */
+.hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
+.hero-text h2 {
+  color: #facc15;
+  margin-top: 0;
+}
+
+.hero-flex img {
+  flex: 1 1 360px;
+  max-width: 520px;
+}
+
+/* 6. Bố cục Grid (3 cột) cho trang Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  background-color: #1e293b;
+  padding: 12px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.gallery-grid img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Tạo kiểu khác cho ảnh chẵn bằng nth-child */
+.gallery-grid figure:nth-child(even) img {
+  border-radius: 24px;
+  border-color: #facc15;
+}
+
+.gallery-grid figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f8fafc;
+}
+
+/* Grid 2 cột cho trang Genres */
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.genre-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.genre-card img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.genre-card h2 {
+  color: #38bdf8;
+  margin: 10px 0;
+}
